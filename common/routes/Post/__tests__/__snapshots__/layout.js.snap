@@ -1,0 +1,33 @@
+exports[`Post layout should render a loaded page 1`] = `
+<div>
+  <div>
+    <h2
+      className="title_1upzcph">
+      t
+    </h2>
+    <p
+      className="content_7tduvm">
+      c
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Post layout should render a loading page 1`] = `
+<div>
+  <div>
+    <h2
+      className="loading_1pyb631">
+      Loading....
+    </h2>
+  </div>
+</div>
+`;
+
+exports[`Post layout should render an error page 1`] = `
+<div>
+  <h1>
+    Page Not Found!
+  </h1>
+</div>
+`;

@@ -17,4 +17,10 @@ function memoize (fn, timeout) {
   }
 }
 
+memoize.flush = () => {
+  fnCache.clear()
+  symCache.clear()
+  argCache.clear()
+}
+
 export default memoize

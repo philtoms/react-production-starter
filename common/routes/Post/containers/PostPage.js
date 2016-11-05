@@ -1,7 +1,6 @@
 import { provideHooks } from 'redial'
 import { connect } from 'react-redux'
-import { loadPost } from '../actions'
-import { selectCurrentPost } from '../reducer'
+import { loadPost, selectCurrentPost } from '../module'
 import Layout from '../components/Layout'
 
 const redial = {

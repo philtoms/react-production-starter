@@ -1,11 +1,10 @@
 import { provideHooks } from 'redial'
 import React, { PropTypes } from 'react'
-import { loadPosts } from '../actions'
+import { loadPosts, selectPosts } from '../module'
 import { connect } from 'react-redux'
 import PostListItem from '../components/PostListItem'
 import { StyleSheet, css } from 'aphrodite'
 import Helmet from 'react-helmet'
-import { selectPosts } from '../reducer'
 
 const redial = {
   fetch: ({ dispatch }) => dispatch(loadPosts())
@@ -27,8 +26,8 @@ const PostListPage = ({ posts }) => (
   </div>
 )
 
-PostListPage.PropTypes = {
-  posts: PropTypes.array.isRequired
+PostListPage.propTypes = {
+  posts: PropTypes.object.isRequired
 }
 
 const styles = StyleSheet.create({
